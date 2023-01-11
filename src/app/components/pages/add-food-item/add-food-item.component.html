@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Add Food Item</h2>
+    <form action="" class="form">
+        <label for="name">Item name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="foodItem.name">
+        <label for="price">Item Price</label>
+        <input type="number" id="price" name="price" [(ngModel)]="foodItem.price">
+        <label for="stars">Stars</label>
+        <input type="number" id="stars" name="stars" [(ngModel)]="foodItem.stars"
+            (blur)="handleStarRatingChange($event)">
+        <label for="image">Image Url</label>
+        <input type="text" id="image" name="image" [(ngModel)]="foodItem.imageUrl">
+        <div class="btn-container">
+            <button class="cancel" routerLink="/manage">Cancel</button>
+            <button (click)="handleAdd()">Add Item</button>
+        </div>
+    </form>
+</div>

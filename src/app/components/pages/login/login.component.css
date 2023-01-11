@@ -1,0 +1,11 @@
+.conainer {
+    width: 100%;
+    height: calc(100% - 53px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/login-background.jpeg");
+    background-position: 0px -230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
